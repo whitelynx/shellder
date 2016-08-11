@@ -227,7 +227,7 @@ function prompt_status -d "the symbols for a non zero exit status, root and back
     # if superuser (uid == 0)
     set -l uid (id -u $USER)
     if [ $uid -eq 0 ]
-      prompt_segment black yellow "⚡"
+      prompt_segment red black "⚡"
     end
 
     # Jobs display
